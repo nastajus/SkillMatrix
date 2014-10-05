@@ -11,6 +11,38 @@ namespace SkillMatrix1
     {
         static void Main(string[] args)
         {
+
+            Table t = new Table();
+            Skill s = new Skill();
+
+            Console.WriteLine(t.ID);
+            Console.WriteLine(s.ID);
+
+            Skill ss = new Skill();
+
+            Console.WriteLine(t.ID);
+            Console.WriteLine(s.ID);
+            Console.WriteLine(ss.ID);
+
+            SkillHave sh = new SkillHave();
+
+            Console.WriteLine(t.ID);
+            Console.WriteLine(s.ID);
+            Console.WriteLine(ss.ID);
+            Console.WriteLine(sh.ID);
+
+
+
+
+
+
+
+
+
+
+
+
+
             string location = System.Reflection.Assembly.GetExecutingAssembly().Location;
             string fileSkills = "hier.txt";
             string appPath = Path.Combine( Path.GetDirectoryName( location ), fileSkills );
@@ -26,8 +58,6 @@ namespace SkillMatrix1
                     
 
                     //count tabs
-                    //new skill
-                    Skill s = new Skill();
                 }
                 line = reader.ReadLine();
                 Console.WriteLine(line);

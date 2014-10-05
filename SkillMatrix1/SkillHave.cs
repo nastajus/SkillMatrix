@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace SkillMatrix1
 {
-    class SkillHave
+    class SkillHave : Skill
     {
+        private static int IDCount;
+        public new int ID;
+        public SkillHave()
+        {
+            ID = ++IDCount;
+        }
     }
 }

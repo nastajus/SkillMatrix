@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SkillMatrix1
 {
-    class Member
+    class Member : Person
     {
     }
 }
