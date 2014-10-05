@@ -6,18 +6,17 @@ using System.Threading.Tasks;
 
 namespace SkillMatrix1
 {
-    /*
-     *  Interesting lesson here. Because I changed the parent class Skill to take a parameter, now this class's inheritance
-     *  is broken. 
-     */
+    class SkillHave : Table // : Skill
+    {
+        private static int IDCount;
+        //Skill skill;
 
-    //class SkillHave : Skill
-    //{
-        //private static int IDCount;
-        //public new int ID;
-        //public SkillHave()
-        //{
-        //    ID = ++IDCount;
-        //}
-    //}
+        public SkillHave(string _name)
+        {
+            ID = ++SkillHave.IDCount;
+            //this.skill = _skill;
+        }
+
+
+    }
 }

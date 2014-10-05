@@ -9,7 +9,6 @@ namespace SkillMatrix1
     public class Skill : Table
     {
         private static int IDCount;
-        public new int ID;
         public string name { get; set; }
         public int? parentID = null;
 
@@ -17,7 +16,7 @@ namespace SkillMatrix1
 
         public Skill(string _name)
         {
-            ID = ++Skill.IDCount;
+            ID = ++Skill.IDCount;   //this won't make sense if this will be the parent of SkillHave.
             this.name = _name;
             skills.Add(this);
         }
