@@ -10,10 +10,29 @@ namespace SkillMatrix1
     {
         private static int IDCount;
         public new int ID;
+        public string name { get; set; }
+        public int? parentID = null;
 
-        public Skill()
+        public static List<Skill> skills = new List<Skill>();
+
+        public Skill(string _name)
         {
             ID = ++IDCount;
+            this.name = _name;
+            skills.Add(this);
         }
+
+        public bool Parent(int _parentID)
+        {
+            this.parentID = _parentID;
+            return true;
+        }
+
+
+        //private bool HasParent(string _parent)
+        //{
+            //verify list of skills has or not. 
+            //i can use a singleton with this containing a static list, or i can use the database instance i created.
+        //}
     }
 }

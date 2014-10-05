@@ -7,17 +7,19 @@ using System.Threading.Tasks;
 namespace SkillMatrix1
 {
     /**
-     * The purpose of this class isn't to instantiate literal tables, just pass on variables and functions.
+     * The purpose of this class isn't to instantiate literal tables, just pass on contract enforcement by exploring 
+     * what's possible with variables and functions. So far it seems I've ruled out enforcing fields. I also tried sealed
+     * but nope. 
      * 
      */
     public class Table //think of as TableRowEntry
     {
-        private static int IDCount = 0;
-        public int ID;
+        private static int IDCount2 = 0;
+        public int ID {get;set;}
 
         public Table()
         {
-            ID = ++IDCount;
+            ID = ++IDCount2;
         }
 
         public virtual bool Modify() { return true; }

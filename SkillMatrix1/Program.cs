@@ -13,27 +13,41 @@ namespace SkillMatrix1
         {
 
             Table t = new Table();
-            Skill s = new Skill();
-
             Console.WriteLine(t.ID);
+            Skill s = new Skill("");
             Console.WriteLine(s.ID);
-
-            Skill ss = new Skill();
-
-            Console.WriteLine(t.ID);
-            Console.WriteLine(s.ID);
+            Skill ss = new Skill("");
             Console.WriteLine(ss.ID);
+            Table tt = new Table();
+            Console.WriteLine(tt.ID);
 
-            SkillHave sh = new SkillHave();
+            //Table t = new Table();
+            //Skill s = new Skill("");
 
-            Console.WriteLine(t.ID);
-            Console.WriteLine(s.ID);
-            Console.WriteLine(ss.ID);
-            Console.WriteLine(sh.ID);
+            //Console.WriteLine(t.ID);
+            //Console.WriteLine(s.ID);
+
+            //Skill ss = new Skill("");
+
+            //Console.WriteLine(t.ID);
+            //Console.WriteLine(s.ID);
+            //Console.WriteLine(ss.ID);
+
+            ////SkillHave sh = new SkillHave();
+
+            //Console.WriteLine(t.ID);
+            //Console.WriteLine(s.ID);
+            //Console.WriteLine(ss.ID);
+            ////Console.WriteLine(sh.ID);
 
 
 
+            //Database db = new Database();
+            //db.skills;
 
+            /*
+             *  What are the pros/cons of allowing a variable to be accessible statically or as an instance member?
+             */
 
 
 
