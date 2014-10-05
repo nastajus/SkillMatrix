@@ -17,7 +17,7 @@ namespace SkillMatrix1
 
         public Skill(string _name)
         {
-            ID = ++IDCount;
+            ID = ++Skill.IDCount;
             this.name = _name;
             skills.Add(this);
         }

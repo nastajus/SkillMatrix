@@ -19,7 +19,10 @@ namespace SkillMatrix1
 
         public Table()
         {
-            ID = ++IDCount2;
+            ID = ++Table.IDCount2;
+            Console.WriteLine("when");
+            //eureka. now i realize the parent constructor is being invoked every time i create a child.
+            //at this point i should examine abstract classes or interfaces.
         }
 
         public virtual bool Modify() { return true; }
