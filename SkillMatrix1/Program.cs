@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,16 +11,22 @@ namespace SkillMatrix1
         static void Main(string[] args)
         {
 
-            Skill s = new Skill("");
+            Skill s = new Skill("art");
             Console.WriteLine(s.ID);
-            Skill ss = new Skill("");
+            Skill ss = new Skill("code");
             Console.WriteLine(ss.ID);
 
-            SkillHave sh = new SkillHave("");
+            SkillMeasure sh = new SkillMeasure("");
             Console.WriteLine(sh.ID);
 
-            Skill sss = new Skill("");
+            Skill sss = new Skill("management");
             Console.WriteLine(sss.ID);
+
+
+
+            Console.WriteLine("COUNT: " + Skill.skills.Count());
+            //Console.WriteLine(Skill.skills.ElementAt(1).ID);
+            
 
 
             //Database db = new Database();
@@ -35,31 +40,11 @@ namespace SkillMatrix1
 
 
 
+            Skill.LoadSkills();
 
 
 
-
-            string location = System.Reflection.Assembly.GetExecutingAssembly().Location;
-            string fileSkills = "hier.txt";
-            string appPath = Path.Combine( Path.GetDirectoryName( location ), fileSkills );
-
-            //
-	        // It will free resources on its own.
-	        //
-	        string line;
-            using (StreamReader reader = new StreamReader(appPath))
-            {
-                while ((line = reader.ReadLine()) != null)
-                {
-                    
-
-                    //count tabs
-                }
-                line = reader.ReadLine();
-                Console.WriteLine(line);
-            }
-
-            Console.ReadLine();
+       
 
         }
     }

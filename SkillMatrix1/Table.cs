@@ -19,7 +19,7 @@ namespace SkillMatrix1
      */
     public abstract class Table //think of as TableRowEntry
     {
-        public int ID;
+        public int ID {get;set;}
 
         bool Modify() { return true; }
 
