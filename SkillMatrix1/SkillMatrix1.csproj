@@ -48,6 +48,7 @@
     <Compile Include="Skill.cs" />
     <Compile Include="SkillMeasure.cs" />
     <Compile Include="Table.cs" />
+    <Compile Include="UtilSO.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

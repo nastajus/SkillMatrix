@@ -146,5 +146,15 @@ namespace SkillMatrix1
             Console.ReadLine();
             return 0;
         }
+
+        public override string Print()
+        {
+            return base.Print() + ID + d + name + d + IsNull(((int)parentID).ToString()) + d;
+        }
+
+        public override string PrintHeader()
+        {
+            return base.Print() + UtilSO.GetVariableName(() => ID) + d + UtilSO.GetVariableName(() => name) + d + UtilSO.GetVariableName(() => parentID) + d;
+        }
     }
 }

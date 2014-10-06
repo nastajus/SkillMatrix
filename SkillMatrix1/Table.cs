@@ -21,7 +21,28 @@ namespace SkillMatrix1
     {
         public int ID {get;set;}
 
+        protected const string d = "\t | "; //delim
+        protected const string n = "\n"; //newline
+        protected const string c = " :: "; //class delim
+
         bool Modify() { return true; }
+
+        public virtual string Print() { 
+            return this.GetType().Name + c; 
+        }
+
+        public virtual string PrintHeader()
+        {
+            return "";
+        }
+
+        protected string IsNull(Object o)
+        {
+            if (o == null)
+                return "(null)";
+            else
+                return o.ToString(); //(string) why not again? 
+        }
 
     }
 }
