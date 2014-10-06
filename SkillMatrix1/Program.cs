@@ -71,10 +71,28 @@ namespace SkillMatrix1
 
             SkillMeasurable smclo = new SkillMeasurable("code", Measurement.Obsessed);
             SkillMeasurable smclodo = new SkillMeasurable("code", Measurement.Obsessed, Measurement.Obsessed);
+            SkillMeasurable smmll = new SkillMeasurable("modelling", Measurement.Lots);
 
             pz.skills.Add(smclo);
             pd.skills.Add(smclodo);
             po.skills.Add(smclo);
+            po.skills.Add(smmll);
+
+            SkillMeasurable sm11 = new SkillMeasurable("trig", Measurement.Lots); pz.skills.Add(sm11);
+            SkillMeasurable sm12 = new SkillMeasurable("physics", Measurement.Lots); pz.skills.Add(sm12);
+            SkillMeasurable sm13 = new SkillMeasurable("trig", Measurement.Lots); pz.skills.Add(sm13);
+            SkillMeasurable sm14 = new SkillMeasurable("mono", Measurement.Lots); pz.skills.Add(sm14); pd.skills.Add(sm14);
+            SkillMeasurable sm15 = new SkillMeasurable("xna", Measurement.Obsessed); pz.skills.Add(sm15); pd.skills.Add(sm15);
+            SkillMeasurable sm16 = new SkillMeasurable("blender", Measurement.Lots); pt.skills.Add(sm16);
+            SkillMeasurable sm17 = new SkillMeasurable("reflection", Measurement.Obsessed); pz.skills.Add(sm17); pd.skills.Add(sm17);
+            SkillMeasurable sm18 = new SkillMeasurable("delegates", Measurement.Obsessed); pz.skills.Add(sm18); pd.skills.Add(sm18);
+            SkillMeasurable sm19 = new SkillMeasurable("opengl", Measurement.Lots); pt.skills.Add(sm19);  po.skills.Add(sm19);
+            SkillMeasurable sm20 = new SkillMeasurable("directx", Measurement.None); pt.skills.Add(sm20); po.skills.Add(sm20);
+            SkillMeasurable sm21 = new SkillMeasurable("animation (2d)", Measurement.Lots); ph.skills.Add(sm21); pj.skills.Add(sm21);
+            SkillMeasurable sm22 = new SkillMeasurable("jetbrains", Measurement.Obsessed); pd.skills.Add(sm22);
+            SkillMeasurable sm23 = new SkillMeasurable("android studio", Measurement.Obsessed); pd.skills.Add(sm23);  
+
+
 
 
 
