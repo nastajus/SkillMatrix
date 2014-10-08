@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+//using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -109,7 +109,50 @@ namespace SkillMatrix1
 
 
             //pj.skills.Add(new SkillMeasurable(""));
-       
+
+
+            
+            
+            //*****************************************************************************************//
+            //  test linkedlist directly 
+            //*****************************************************************************************//
+
+            //LinkedListMine ll_terminal = new LinkedListMine(null, null);
+            practice_oo.Banana b = new practice_oo.Banana();
+            b.Eat();
+            b.Peel();
+            //b.sn();
+
+
+
+            /*
+             *                5
+             *              /   \
+             *            4       7
+             *           / \     / \
+             *          2       6   8
+             *         / \           
+             *        1   3
+             *       / \ / \
+             */
+
+
+            Node node_root = new Node(5,
+                new Node(4,
+                    new Node(2,
+                        new Node(1, null, null),
+                        new Node(3, null, null) 
+                    ),
+                new Node(7,
+                    new Node(6, null, null),
+                    new Node(8, null, null)
+                    )
+                ),
+                null); //4's right
+
+            Recurse.TraverseBU(node_root);
+
+            Console.ReadLine();
 
         }
     }

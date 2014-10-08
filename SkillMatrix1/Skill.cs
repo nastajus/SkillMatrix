@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SkillMatrix1
 {
-    public class Skill : Table
+    class Skill : Table
     {
         private static int IDCount;
         public string name { get; set; }

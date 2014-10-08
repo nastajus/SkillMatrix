@@ -28,7 +28,7 @@ namespace SkillMatrix1
         bool Modify() { return true; }
 
         public virtual string Print() { 
-            return this.GetType().Name + c; 
+            return this.GetType().Name + c;
         }
 
         public virtual string PrintHeader()
